@@ -9,7 +9,7 @@ default: $(TARGET)
 all: default
 
 HEADERS = student.h
-OBJECTS = studentmake.o student.o
+OBJECTS = studentmake.c student.c
 
 %.o: %.c $(HEADERS)
         $(CC) $(CFLAGS) -c $< -o $@
